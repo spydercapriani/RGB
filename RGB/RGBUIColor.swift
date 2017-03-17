@@ -6,7 +6,6 @@
 //  Copyright © 2017 Danny Gilbert. All rights reserved.
 //
 
-import Foundation
 import Curry
 
 public func RGBUIColor(red: Int, green: Int, blue: Int) -> UIColor {
