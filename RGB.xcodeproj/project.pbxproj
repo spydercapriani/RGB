@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D24487E1E7C55DA009F1E16 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 3D24487D1E7C55DA009F1E16 /* Cartfile */; };
+		3D2448801E7C55E7009F1E16 /* Cartfile.private in Resources */ = {isa = PBXBuildFile; fileRef = 3D24487F1E7C55E7009F1E16 /* Cartfile.private */; };
+		3D2448831E7C5674009F1E16 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2448821E7C5674009F1E16 /* Curry.framework */; };
+		3D2448861E7C56E1009F1E16 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2448841E7C56E1009F1E16 /* Nimble.framework */; };
+		3D2448871E7C56E1009F1E16 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2448851E7C56E1009F1E16 /* Quick.framework */; };
+		3D2448891E7C589D009F1E16 /* RGB.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3D2448881E7C589D009F1E16 /* RGB.podspec */; };
 		3DBDC0E81E7C50DD00F234D8 /* RGB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBDC0DE1E7C50DD00F234D8 /* RGB.framework */; };
 		3DBDC0ED1E7C50DD00F234D8 /* RGBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDC0EC1E7C50DD00F234D8 /* RGBTests.swift */; };
 		3DBDC0EF1E7C50DD00F234D8 /* RGB.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DBDC0E11E7C50DD00F234D8 /* RGB.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D24487D1E7C55DA009F1E16 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		3D24487F1E7C55E7009F1E16 /* Cartfile.private */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
+		3D2448821E7C5674009F1E16 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = "Carthage/Checkouts/Curry/build/Debug-iphoneos/Curry.framework"; sourceTree = "<group>"; };
+		3D2448841E7C56E1009F1E16 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		3D2448851E7C56E1009F1E16 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
+		3D2448881E7C589D009F1E16 /* RGB.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RGB.podspec; sourceTree = "<group>"; };
 		3DBDC0DE1E7C50DD00F234D8 /* RGB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RGB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBDC0E11E7C50DD00F234D8 /* RGB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGB.h; sourceTree = "<group>"; };
 		3DBDC0E21E7C50DD00F234D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2448831E7C5674009F1E16 /* Curry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2448861E7C56E1009F1E16 /* Nimble.framework in Frameworks */,
+				3D2448871E7C56E1009F1E16 /* Quick.framework in Frameworks */,
 				3DBDC0E81E7C50DD00F234D8 /* RGB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,12 +65,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D2448811E7C5674009F1E16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D2448841E7C56E1009F1E16 /* Nimble.framework */,
+				3D2448851E7C56E1009F1E16 /* Quick.framework */,
+				3D2448821E7C5674009F1E16 /* Curry.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3DBDC0D41E7C50DD00F234D8 = {
 			isa = PBXGroup;
 			children = (
+				3D2448881E7C589D009F1E16 /* RGB.podspec */,
+				3D24487D1E7C55DA009F1E16 /* Cartfile */,
+				3D24487F1E7C55E7009F1E16 /* Cartfile.private */,
 				3DBDC0E01E7C50DD00F234D8 /* RGB */,
 				3DBDC0EB1E7C50DD00F234D8 /* RGBTests */,
 				3DBDC0DF1E7C50DD00F234D8 /* Products */,
+				3D2448811E7C5674009F1E16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,6 +210,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D24487E1E7C55DA009F1E16 /* Cartfile in Resources */,
+				3D2448801E7C55E7009F1E16 /* Cartfile.private in Resources */,
+				3D2448891E7C589D009F1E16 /* RGB.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +360,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Curry/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = RGB/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -347,6 +383,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Curry/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = RGB/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +440,7 @@
 				3DBDC0F41E7C50DD00F234D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DBDC0F51E7C50DD00F234D8 /* Build configuration list for PBXNativeTarget "RGBTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +449,7 @@
 				3DBDC0F71E7C50DD00F234D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
