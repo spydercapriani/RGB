@@ -13,6 +13,7 @@
 		3D2448861E7C56E1009F1E16 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2448841E7C56E1009F1E16 /* Nimble.framework */; };
 		3D2448871E7C56E1009F1E16 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2448851E7C56E1009F1E16 /* Quick.framework */; };
 		3D2448891E7C589D009F1E16 /* RGB.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3D2448881E7C589D009F1E16 /* RGB.podspec */; };
+		3D24488B1E7C690C009F1E16 /* RGBUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24488A1E7C690C009F1E16 /* RGBUIColor.swift */; };
 		3DBDC0E81E7C50DD00F234D8 /* RGB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBDC0DE1E7C50DD00F234D8 /* RGB.framework */; };
 		3DBDC0ED1E7C50DD00F234D8 /* RGBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDC0EC1E7C50DD00F234D8 /* RGBTests.swift */; };
 		3DBDC0EF1E7C50DD00F234D8 /* RGB.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DBDC0E11E7C50DD00F234D8 /* RGB.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,6 +36,7 @@
 		3D2448841E7C56E1009F1E16 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		3D2448851E7C56E1009F1E16 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 		3D2448881E7C589D009F1E16 /* RGB.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RGB.podspec; sourceTree = "<group>"; };
+		3D24488A1E7C690C009F1E16 /* RGBUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBUIColor.swift; sourceTree = "<group>"; };
 		3DBDC0DE1E7C50DD00F234D8 /* RGB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RGB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBDC0E11E7C50DD00F234D8 /* RGB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGB.h; sourceTree = "<group>"; };
 		3DBDC0E21E7C50DD00F234D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				3DBDC0E11E7C50DD00F234D8 /* RGB.h */,
 				3DBDC0E21E7C50DD00F234D8 /* Info.plist */,
+				3D24488A1E7C690C009F1E16 /* RGBUIColor.swift */,
 			);
 			path = RGB;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 					3DBDC0DD1E7C50DD00F234D8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 22S6G5S8V4;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					3DBDC0E61E7C50DD00F234D8 = {
@@ -230,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D24488B1E7C690C009F1E16 /* RGBUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +359,7 @@
 		3DBDC0F31E7C50DD00F234D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 22S6G5S8V4;
@@ -370,6 +376,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.RGB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -377,6 +384,7 @@
 		3DBDC0F41E7C50DD00F234D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 22S6G5S8V4;
@@ -400,6 +408,7 @@
 		3DBDC0F61E7C50DD00F234D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 22S6G5S8V4;
 				INFOPLIST_FILE = RGBTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -412,6 +421,7 @@
 		3DBDC0F71E7C50DD00F234D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 22S6G5S8V4;
 				INFOPLIST_FILE = RGBTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
